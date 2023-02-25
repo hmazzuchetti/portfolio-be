@@ -1,0 +1,22 @@
+{
+  "dependencies": {
+    "colors": "^1.4.0",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "express-async-handler": "^1.2.0",
+    "mongoose": "^6.10.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  },
+  "name": "portfolio-backend",
+  "description": "NODE_ENV: Define the env file as development\r PORT: Define the port it should listen on local host\r MONG_URI: Define the database bucket for mongo",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "start": "node backend/server.js",
+    "server": "nodemon backend/server.js"
+  },
+  "author": "Henrique Mazzuchetti",
+  "license": "ISC"
+}
