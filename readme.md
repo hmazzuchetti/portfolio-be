@@ -1,4 +1,5 @@
 ## ENV file
+
 NODE_ENV: Define the env file as development
 PORT: Define the port it should listen on local host
 MONG_URI: Define the database bucket for mongo
@@ -12,3 +13,11 @@ Installed using npm i:
 > express-async-handler: used to connect with mongodb async functions to wait for the mongodb to bring response before doing anything.
 > mongoose: Mongodb framework
 > nodemon: nodemon is a tool that helps develop Node.js based applications by automatically restarting the node application when file changes in the directory are detected
+
+## db.js
+
+Uses mongoose to connect to the desired collection, which in this case is portfolio collection on mongoDB. The DB uri is located on the env file
+
+
+
+
