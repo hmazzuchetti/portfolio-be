@@ -13,12 +13,6 @@ const getPortfolio = asyncHandler (async (req, res) => {
 // @route POST /api/goals
 // @access Private
 const setPortfolio = asyncHandler(async (req, res) => {
-    // if(!req.body.text){
-    //     // 400 is a bad request, which means that the request is missing something
-    //     res.status(400)
-    //     throw new Error('Please add a text field');
-    // }
-    console.log(req.body);
     const portfolio = await Portfolio.create({
         name: req.body.name,
         description: req.body.description,
@@ -30,7 +24,6 @@ const setPortfolio = asyncHandler(async (req, res) => {
         socialMedias: req.body.socialMedias,
         projects: req.body.projects,
     });
-
     res.status(200).json(portfolio);
 })
 
