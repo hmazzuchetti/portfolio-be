@@ -9,7 +9,12 @@
     "mongoose": "^6.10.0"
   },
   "devDependencies": {
-    "nodemon": "^2.0.20"
+    "@babel/core": "^7.21.0",
+    "babel-loader": "^9.1.2",
+    "nodemon": "^2.0.20",
+    "webpack": "^5.76.1",
+    "webpack-cli": "^5.0.1",
+    "webpack-node-externals": "^3.0.0"
   },
   "name": "portfolio-backend",
   "description": "NODE_ENV: Define the env file as development\r PORT: Define the port it should listen on local host\r MONG_URI: Define the database bucket for mongo",
@@ -17,7 +22,8 @@
   "main": "server.js",
   "scripts": {
     "start": "node backend/server.js",
-    "server": "nodemon backend/server.js"
+    "server": "nodemon backend/server.js",
+    "build:dev": "webpack --config webpack.dev.js --mode development"
   },
   "author": "Henrique Mazzuchetti",
   "license": "ISC"
